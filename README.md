@@ -42,7 +42,7 @@ Recall supports the following commands:
    This script will set up the configuration file and install all necessary dependencies.
 
    ```sh
-   ./Installer.bat
+   ./Install.bat
    ```
 
 3. **Configure the Bot**
