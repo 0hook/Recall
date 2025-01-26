@@ -37,7 +37,7 @@ Recall supports the following commands:
    cd Recall
    ```
 
-2. **Run the Installer Script**
+2. **Run the Install Script**
 
    This script will set up the configuration file and install all necessary dependencies.
 
