@@ -69,39 +69,6 @@ Recall supports the following commands:
    ./Recall.bat
    ```
 
-## Project Structure 📁
-
-The project has been refactored into TypeScript with a modular structure:
-
-```
-Recall/
-├── src/                   # Source code directory
-│   ├── commands.ts        # Command handlers
-│   ├── index.ts           # Main entry point
-│   └── types.ts           # TypeScript type definitions
-├── dist/                  # Compiled JavaScript (generated)
-├── config.ini             # Bot configuration
-├── package.json           # Project dependencies
-├── tsconfig.json          # TypeScript configuration
-├── Install.bat            # Installation script
-└── Recall.bat             # Start script
-```
-
-## Development 🛠️
-
-To develop and extend Recall, you can use the following npm scripts:
-
-```sh
-# Build the TypeScript code
-npm run build
-
-# Start the bot
-npm start
-
-# Development mode with file watching
-npm run dev
-```
-
 ## Disclaimer ⚠️
 
 **WARNING**: This bot is for educational and ethical purposes only. Misuse, such as deploying the bot on servers without proper authorization, is strictly prohibited and against Discord's Terms of Service.
