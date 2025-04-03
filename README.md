@@ -2,7 +2,7 @@
 
 Recall is a proof-of-concept Discord nuking bot built with Discord.js v14+ and TypeScript. This is a legacy project that has been refactored and improved to demonstrate modern JavaScript/TypeScript expertise.
 
-### Commands ⌨️
+### Commands
 
 Recall supports the following commands:
 
@@ -20,14 +20,14 @@ Recall supports the following commands:
 - **`mc <amount> [-v]`**: Create channels (use `-v` for voice channels)
 - **`nuke <channelsAmount> <mentionsAmount>`**: Delete channels and mention `@everyone`
 
-## Setup 🌐
+## Setup
 
-### Prerequisites 📚
+### Prerequisites
 
 - Node.js (v18.0.0 or later)
 - npm (Node Package Manager)
 
-### Installation 📂
+### Installation
 
 1. **Clone the Repository**
 
@@ -69,6 +69,6 @@ Recall supports the following commands:
    ./Recall.bat
    ```
 
-## Disclaimer ⚠️
+## Disclaimer
 
 **WARNING**: This bot is for educational and ethical purposes only. Misuse, such as deploying the bot on servers without proper authorization, is strictly prohibited and against Discord's Terms of Service.
