@@ -1,6 +1,6 @@
 # Recall Nuker
 
-Recall is a proof-of-concept Discord nuking bot built with Discord.js v14+. This is a legacy project that I'm open-sourcing to demonstrate my JavaScript expertise.
+Recall is a proof-of-concept Discord nuking bot built with Discord.js v14+ and TypeScript. This is a legacy project that has been refactored and improved to demonstrate modern JavaScript/TypeScript expertise.
 
 ### Commands ⌨️
 
@@ -17,9 +17,8 @@ Recall supports the following commands:
 - **`bb`**: Ban all bots
 - **`k <role name>`**: Kick users with the specified role
 - **`b <role name>`**: Ban users with the specified role
-- **`mc <amount> [-v, -r]`**: Create channels (use `-v` for voice or `-r` for random channels)
+- **`mc <amount> [-v]`**: Create channels (use `-v` for voice channels)
 - **`nuke <channelsAmount> <mentionsAmount>`**: Delete channels and mention `@everyone`
-- **`self`**: Create a special role for the user (configured in `config.ini`)
 
 ## Setup 🌐
 
@@ -39,7 +38,7 @@ Recall supports the following commands:
 
 2. **Run the Install Script**
 
-   This script will set up the configuration file and install all necessary dependencies.
+   This script will set up the configuration file, install all necessary dependencies, and build the TypeScript code.
 
    ```sh
    ./Install.bat
@@ -56,6 +55,12 @@ Recall supports the following commands:
    operators=your_user_id
    ```
 
+   For multiple operators, separate IDs with commas:
+   
+   ```ini
+   operators=id1,id2,id3
+   ```
+
 4. **Start the Bot**
 
    Run the following command to start Recall.
@@ -63,6 +68,39 @@ Recall supports the following commands:
    ```sh
    ./Recall.bat
    ```
+
+## Project Structure 📁
+
+The project has been refactored into TypeScript with a modular structure:
+
+```
+Recall/
+├── src/                   # Source code directory
+│   ├── commands.ts        # Command handlers
+│   ├── index.ts           # Main entry point
+│   └── types.ts           # TypeScript type definitions
+├── dist/                  # Compiled JavaScript (generated)
+├── config.ini             # Bot configuration
+├── package.json           # Project dependencies
+├── tsconfig.json          # TypeScript configuration
+├── Install.bat            # Installation script
+└── Recall.bat             # Start script
+```
+
+## Development 🛠️
+
+To develop and extend Recall, you can use the following npm scripts:
+
+```sh
+# Build the TypeScript code
+npm run build
+
+# Start the bot
+npm start
+
+# Development mode with file watching
+npm run dev
+```
 
 ## Disclaimer ⚠️
 
